@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* 1. STATIC (Standard) */
+.box-static {
+  background-color: lightgray;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid black;
+}
+
+/* 2. RELATIVE (leicht verschoben) */
+.box-relative {
+  background-color: lightcoral;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid black;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+/* 3. ABSOLUTE (im Container positioniert) */
+.container {
+  position: relative;
+  background-color: lightblue;
+  width: 100%;
+  margin: 25px 0; /*oben/unten = 20px, rechts/links = 0*/
+  height: 200px;
+  border: 2px solid navy;
+}
+
+.box-absolute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* 4. FIXED (immer sichtbar beim Scrollen) */
+.box-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  color: white;
+  padding: 10px 20px; /*oben/unten: 10px; links/rechts: 20px*/
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+}
+
+/* 5. z-index (Elemente überlappen) */
+.z-wrapper {
+  position: relative;
+  height: 2000px;
+  margin: 50px;
+  background-color: black;
+}
+
+.z-box1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  z-index: 1;
+}
+
+.z-box2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+  color: white;
+  z-index: 2;
+}

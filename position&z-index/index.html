@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Position & z-index</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box-static">1. Static – normale Position, nicht verschoben</div>
+
+    <div class="box-relative">
+      2. Relative – 20px nach unten, 30px nach rechts
+    </div>
+
+    <div class="container">
+      <div class="box-absolute">3. Absolute – oben rechts in Container</div>
+    </div>
+
+    <div class="z-wrapper">
+      <div class="z-box1">Orange Box<br />z-index: 1</div>
+      <div class="z-box2">Lila Box<br />z-index: 2 (liegt oben)</div>
+    </div>
+
+    <div class="box-fixed">4. Fixed</div>
+  </body>
+</html>
